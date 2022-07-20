@@ -2,6 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* main-part */
+@keyframes color-change {
+    from {
+        background-color: #DD0000;
+    }
+
+    to {
+        background-color: khaki;
+    }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -50,6 +60,7 @@ main {
     border-radius: 5px;
     border: 0px;
     transition: width 1s ease;
+    animation: color-change 1s infinite;
 }
 
 button:hover {
@@ -182,6 +193,12 @@ span {
     border: 0px;
     transition: width 1s ease;
 
+}
+
+#bg-1 {
+    background-color: #DD0000;
+    color: #FFFFFF;
+    margin-bottom: 0;
 }
 
 .last-button button a {
